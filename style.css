@@ -1,0 +1,57 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/* Start your base/mobile styles here */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.item {
+  display: none;
+  width: 50%;
+  padding: 5px;
+  float: left;
+  min-height: 185px;
+  text-align: center;
+}
+
+.item.active {
+  display: block;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+}
+
+select {
+  display: block;
+  width: 100%;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+  .item {
+    width: 33%;
+    min-height: 310px;
+  }
+  select {
+    width: 33%;
+  }
+}
+
+@media(min-width: 729px) {
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
